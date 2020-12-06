@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+
+# enable apache rewrite engine
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.html [QSA,L]
